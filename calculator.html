@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Vamos Calcular?</h1>
+    </header>
+
+    <section>
+      <div id="data">
+        <p><strong>Escolha um número:</strong></p>
+        <input type="number" id="n1" />
+        <p><strong>Escolha outro número:</strong></p>
+        <input type="number" id="n2" />
+        <p><strong>Escolha uma operação:</strong></p>
+        <input type="button" value="Adição" id="b1" onclick="somar()" />
+        <input type="button" value="Subtração" id="b2" onclick="subtrair()" />
+        <input
+          type="button"
+          value="Multiplição"
+          id="b3"
+          onclick="multiplicar()"
+        />
+        <input type="button" value="Divisão" id="b4" onclick="dividir()" />
+        <input type="button" value="Expoente" id="b4" onclick="exponenciar()" />
+        <input
+          type="button"
+          value="Divisão Inteira"
+          id="b4"
+          onclick="dividir2()"
+        />
+        <input type="button" value="Fatorial" id="b4" onclick="fatorar()" />
+        <input type="button" value="Zerar" id="b5" onclick="zerar()" />
+      </div>
+      <div id="res">
+        <p><strong>Seu resultado aparecerá aqui!</strong></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; CASM Project</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
